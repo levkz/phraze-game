@@ -1,0 +1,52 @@
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+.container-1 div {
+    width: 49%;
+    transition: color 0.5s, border 0.5s;
+}
+
+@media (max-width: 720px) 
+{
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .container-1 div {
+        width: 100%;
+    }
+
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+}
+
+#placeHolder {
+    background-color: white;
+    padding: 5% 0%;
+    margin: 2% 0%;
+}
+
+#main-phrase, #score {
+
+    text-align: center;
+    margin: 0% 10%;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 15.0rem;
+}
+

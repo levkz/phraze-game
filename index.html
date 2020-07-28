@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="unicode">
+  <title>Фразеологізм</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'images/favicon.png') }}">
+  
+      <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="{{ url_for('static', filename = 'scripts/jquery-3.5.1.min.js') }}"></script>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/skeleton.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/flexButtons.css') }}">
+
+</head>
+<body style = "background-color: rgb(104, 104, 104)">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div style="margin: 20px 0px 0% 20px; color: rgb(238, 238, 238);">
+      <h4>Фразеологізм</h4>
+      <p>Гра для вивчення фразеологізмів.</p>
+    </div>
+    <div id = "placeHolder">
+      <h1 id = "main-phrase">Кров з молоком</h1>
+    </div>
+    <div>
+      <div class="container-1">
+        <div class="button unselectable" id="b0">вемеді спілі</div>
+        <div class="button unselectable" id="b1">Рум'янець</div>
+      </div>
+      <div class="container-1">
+        <div class="button unselectable" id="b2">Сила волі</div>
+        <div class="button unselectable" id="b3">Невдача</div>
+      </div>
+    </div>
+    <p>
+    <h1 id="score">0</h1>
+  <script src="{{ url_for('static', filename = 'scripts/main.js') }}"></script>
+  
+</body>
+</html>
