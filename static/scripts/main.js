@@ -37,7 +37,6 @@ function mainCode () {
         }
 
         keys = shufleArray(Object.keys(data));
-        console.log(keys);
         nextPhraze = () => {
             answer = randomInt(buttonsAmount);
             $("#main-phrase").text(keys[currentLine + answer]);
